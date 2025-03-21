@@ -17,6 +17,7 @@ Essas seções estão representadas no código como `secao{numero}`, onde cada n
 1. **Clone o repositório**
    ```sh
    git clone https://github.com/i9-tech/i9-desgin.git
+   cd ./public
    ```
 2. **Abra o projeto no navegador**
    Basta abrir o arquivo `index.html` no seu navegador.
@@ -74,7 +75,7 @@ Para desenvolver novos componentes ou modificar os existentes, siga as boas prá
 
 ---
 
-💡 **Dica:** Qw imagens dos componentes estão no Figma, e logo serão adicionadas ao projeto na pasta correspondente, auxiliando na codagem.
+💡 **Dica:** As imagens dos componentes estão na pasta `assets`, então caso tenha alguma dúvida ou precise de auxílio, elas estão disponíveis para visualização.
 
 Feliz codificação! 🚀
 &copy; 2025 i9tech. Todos os direitos reservados. 
