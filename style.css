@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --texto-preto: #040B28;
+  --hovers: #0E2361;
+  --destaque: #0F14B8;
+  --background: #FAFAFA;
+  --background-white: #FBFEFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  accent-color: var(--destaque);
+}
+
+body {
+  display: flex;
+  background-color: var(--background);
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+
+    #header {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: var(--destaque);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    #header:hover {
+        cursor: pointer;
+        background-color: #0e2361aa;
+    }
+
+    .cabecalho {
+        padding: 10px;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        background-color: #bcc9f16a;
+
+        .titulo {
+            font-weight: normal;
+            color: var(--destaque);
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .options {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 8px;
+            align-items: center;
+
+            h2 {
+                color: var(--hovers);
+            }
+
+            .botoes {
+                button {
+                    background-color: #83A1FF;
+                    color: #fff;
+                    padding: 6px;
+                    border: none;
+                    border-radius: 1rem;
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    background-color: #0E2361;
+                }
+            }
+        }
+    }
+
+    .secao1 {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        background-color: lightpink;
+    }
+    
+    .secao2 {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        background-color: lightgreen;
+    }
+    
+    .secao3 {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        background-color: lightblue;
+    }
+    
+    .secao4 {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        background-color: lightcoral;
+    }
+    
+    .secao5 {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        background-color: lightslategray;
+    }
+
+
+
+}
