@@ -33,15 +33,6 @@ botoes.forEach(({ btn, secao, nome }) => {
         if (secaoSelecionada) {
             secaoSelecionada.style.display = 'flex';
             scnAtual.innerHTML = `Categoria selecionada: <b style='color: red'>${nome}</b>`
-            nome.style.color = 'red';
         }
     });
-});
-
-/* SEÇÃO 4 - LISTAS */
-/* SCRIPT PARA LISTA DE ITENS ESTOQUE */
-const spanItems = document.querySelectorAll(".item");
-
-spanItems.forEach(item => {
-  item.title = item.innerText;
 });
