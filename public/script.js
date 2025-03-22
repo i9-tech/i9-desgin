@@ -33,7 +33,7 @@ botoes.forEach(({ btn, secao, nome }) => {
         if (secaoSelecionada) {
             secaoSelecionada.style.display = 'flex';
             scnAtual.innerHTML = `Categoria selecionada: <b style='color: red'>${nome}</b>`
-            nome.style.color = 'red';
+            nome.style = 'color: red';
         }
     });
 });
