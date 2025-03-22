@@ -4,6 +4,7 @@
   --texto-preto: #040B28;
   --hovers: #0E2361;
   --destaque: #0F14B8;
+  --destaque-secundario: #83A1FF;
   --background: #FAFAFA;
   --background-white: #FBFEFF;
 }
@@ -75,7 +76,7 @@ body {
 
             .botoes {
                 button {
-                    background-color: #83A1FF;
+                    background-color: var(--destaque-secundario);
                     color: #fff;
                     padding: 6px;
                     border: none;
@@ -116,7 +117,8 @@ body {
         align-items: center;
         background-color: lightblue;
     }
-    
+
+     /* SEÇÃO DE LISTAS */
     .secao4 {
         display: flex;
         height: 100%;
@@ -124,6 +126,29 @@ body {
         justify-content: center;
         align-items: center;
         background-color: lightcoral;
+
+        ul {
+            li {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0.5%;
+                article {
+                    width: 100vw;
+                    background-color: yellow;
+                    display: flex;
+                    text-align: center;
+                    gap: 2%;
+                    span {
+                        box-sizing: border-box;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        width: 18%;
+                        background-color: brown;
+                    }
+                }
+            }
+        }
     }
     
     .secao5 {

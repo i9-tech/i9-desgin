@@ -37,3 +37,11 @@ botoes.forEach(({ btn, secao, nome }) => {
         }
     });
 });
+
+/* SEÇÃO 4 - LISTAS */
+/* SCRIPT PARA LISTA DE ITENS ESTOQUE */
+const spanItems = document.querySelectorAll(".item");
+
+spanItems.forEach(item => {
+  item.title = item.innerText;
+});
