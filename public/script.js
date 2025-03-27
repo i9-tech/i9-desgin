@@ -50,22 +50,20 @@ secaoTabela.appendChild(tabelaItens);
 
 fetch("./data.json")
 .then(response => response.json())
-.then(data => construirTabela(Object.values(data)))
+.then(data => construirTabela(Object.values(data.Produto)))
 .catch(error => console.error("Erro ao carregar JSON:", error));
 
 function construirTabela(dadosProdutos) {
     const cabecalhoTabela = document.createElement("tr");
     cabecalhoTabela.classList.add("header");
     
-    dadosProdutos.forEach(produto => {
-        const chaves = Object.keys(produto[0]); 
+    const chaves = Object.keys(dadosProdutos[0]); 
         chaves.forEach(chave => {
             const itensCabecalho = document.createElement("th");
             itensCabecalho.innerText = chave
             itensCabecalho.scope = "col";
             cabecalhoTabela.appendChild(itensCabecalho);
         });
-    });
 
     console.log(cabecalhoTabela);
     tabelaItens.appendChild(cabecalhoTabela);
