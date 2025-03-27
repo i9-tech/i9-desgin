@@ -1,7 +1,6 @@
 {
     "Produto": [
         {
-          "id": "1",
           "codigo": "0122351",
           "imagem": "",
           "nome": "Arroz Velho",
@@ -9,11 +8,11 @@
           "compra": 15,
           "venda": 25,
           "estoque": 7,
-          "descricao": "Arroz branco",
-          "dtRegistro": "09/03/2025, 18:32:33"
+          "descricao": "",
+          "dtRegistro": "04/03/2025, 09:03:32",          
+          "id": "1"
         },
         {
-          "id": "2",
           "codigo": "03944755",
           "imagem": "",
           "nome": "Batata",
@@ -22,10 +21,10 @@
           "venda": 5.5,
           "estoque": 12,
           "descricao": "",
-          "dtRegistro": "04/03/2025, 09:03:32"
+          "dtRegistro": "04/03/2025, 09:03:32",
+          "id": "2"
         },
         {
-          "id": "db06",
           "codigo": "13123",
           "imagem": "",
           "nome": "Feijao",
@@ -34,10 +33,10 @@
           "venda": 1,
           "estoque": 1,
           "descricao": "",
-          "dtRegistro": "05/03/2025, 12:41:25"
+          "dtRegistro": "05/03/2025, 12:41:25",
+          "id": "db06"
         },
         {
-          "id": "c14c",
           "codigo": "12344",
           "imagem": "",
           "nome": "1",
@@ -46,7 +45,8 @@
           "venda": 1,
           "estoque": 1,
           "descricao": "produto",
-          "dtRegistro": "05/03/2025, 12:47:58"
+          "dtRegistro": "05/03/2025, 12:47:58",
+          "id": "c14c"
         }
       ]
     }
