@@ -6,6 +6,7 @@
   --destaque: #0F14B8;
   --background: #FAFAFA;
   --background-white: #FBFEFF;
+  --cor-secundaria: #83A1FF;
 }
 
 * {
@@ -106,6 +107,145 @@ body {
         justify-content: center;
         align-items: center;
         background-color: lightgreen;
+        
+        .botao-entrar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-entrar {
+            background-color: var(--destaque);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .button-entrar:hover {
+            background-color: var(--hovers); 
+        }
+        
+        @media (max-width: 600px) {
+            .button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+        .botao-confirmar-pedido{
+            background-color: var(--cor-secundaria);
+            padding: 12px;
+            border-radius: 5px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            width: 280px;
+            font-weight:500;
+
+            .info-pedido{
+                color: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+
+                #qtd-itens{
+                        opacity: 65%;
+                    }
+                }
+
+                .button-confirmar{
+                    background-color: #FFFFFF; 
+                    border: none; 
+                    color: var(--cor-secundaria);
+                    padding: 10px; 
+                    border-radius: 5px; 
+                    cursor: pointer;
+                    font-weight: 600;
+                }
+
+            .button-confirmar:hover{
+                color: var(--destaque);
+            }
+        }
+        .botao-confirmar-pedido:hover{
+            background-color: var(--destaque);
+        }
+
+        .botao-generico-atendente{
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--background);
+            background-color: var(--cor-secundaria); 
+        }
+        .botao-generico-atendente:hover{
+            background-color: var(--destaque); 
+        }
+
+        
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkbox-cozinha-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            gap: 8px;
+            border: 1px solid var(--destaque);
+            border-radius: 8px;
+            background-color: white;
+            color: var(--destaque);
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+
+            img{
+                width: 18px; 
+                height: 18px;
+            }
+        }
+
+         input[type="checkbox"]:checked + .checkbox-cozinha-label {
+            background-color: var(--destaque);
+            color: white;
+
+        }
+
+        input[type="checkbox"]:checked +
+        .checkbox-cozinha-label img {
+            content: url("../assets/check-branco.svg");
+        }
+        
+
+        .botao-carrossel{
+            padding: 20px 20px;
+            border: none;
+            border-radius: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 500;
+            color: white;
+            background-color: var(--destaque);
+
+            img{
+                width: 20px; 
+                height: 20px; 
+                margin-bottom: -4px
+            }
+        }
+        .botao-carrossel:hover{
+            background-color: var(--hovers);
+        }
+        
+
+
     }
     
     .secao3 {
