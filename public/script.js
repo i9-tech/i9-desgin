@@ -51,6 +51,7 @@ secaoTabela.appendChild(tabelaItens);
 fetch("./data.json")
 .then(response => response.json())
 .then(data => construirTabela(Object.values(data.Produto)))
+// .then(data => construirTabela(Object.values(data.Funcionario)))
 .catch(error => console.error("Erro ao carregar JSON:", error));
 
 function construirTabela(dadosProdutos) {
@@ -78,20 +79,28 @@ function construirTabela(dadosProdutos) {
 }
 
 function buscarDados(dadosProdutos, tabelaItens) {
-
+    let index = 0;
     dadosProdutos.forEach(produto => {
+        index++;
+
         const linhaItem = document.createElement("tr");
         linhaItem.classList.add("lista-item");
+        if(index % 2 == 0) {
+          linhaItem.style = 'background-color: #E8ECF8';
+        }
+
         const dados = Object.values(produto)
         inserirDados(dados, linhaItem, tabelaItens)
     })
 
 }
 
+// PRODUTOS
 function inserirDados(dados, linhaItem, tabelaItens) {
 
   dados.forEach((valor, chave) => {
     const infoItem = document.createElement("td");
+    const spanItem = document.createElement("span");
     infoItem.classList.add("item");
     if(chave == 9) {
         const botaoEditar = document.createElement("button");
@@ -108,11 +117,40 @@ function inserirDados(dados, linhaItem, tabelaItens) {
       imagemProduto.src = valor;
       infoItem.appendChild(imagemProduto);
     } else if (chave == 4 || chave == 5) {
-      infoItem.innerText = "R$ " + valor
+      spanItem.innerText = "R$ " + valor
+      infoItem.appendChild(spanItem);  
     } else {
-        infoItem.innerText = valor;      
+      spanItem.innerText = valor;      
+      infoItem.appendChild(spanItem);  
     }
-    linhaItem.appendChild(infoItem);  
+    linhaItem.appendChild(infoItem);
 })
+console.log(linhaItem)
 tabelaItens.appendChild(linhaItem);
 }
+
+// FUNCIONARIOS
+// function inserirDados(dados, linhaItem, tabelaItens) {
+
+//   dados.forEach((valor, chave) => {
+//     const infoItem = document.createElement("td");
+//     const spanItem = document.createElement("span");
+//     infoItem.classList.add("item");
+//     if(chave == 2) {
+//         const botaoEditar = document.createElement("button");
+//         const botaoDeletar = document.createElement("button");
+//         botaoEditar.classList.add("item");
+//         botaoDeletar.classList.add("item");
+//         botaoEditar.innerText = '✏️';
+//         botaoDeletar.innerText = '🗑️';
+//         infoItem.appendChild(botaoEditar);
+//         infoItem.appendChild(botaoDeletar);
+//     } else {
+//       spanItem.innerText = valor;      
+//       infoItem.appendChild(spanItem);  
+//     }
+//     linhaItem.appendChild(infoItem);
+// })
+// console.log(linhaItem)
+// tabelaItens.appendChild(linhaItem);
+// }

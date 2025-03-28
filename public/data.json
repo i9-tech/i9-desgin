@@ -8,7 +8,7 @@
           "compra": 15,
           "venda": 25,
           "estoque": 7,
-          "descricao": "",
+          "descricao": "produto produto asdojasdiuajsdiaujsdiuasjdiuasdjasiudas",
           "dtRegistro": "04/03/2025",          
           "id": "1"
         },
@@ -47,6 +47,18 @@
           "descricao": "produto",
           "dtRegistro": "05/03/2025",
           "id": "c14c"
+        }
+      ],
+      "Funcionario": [
+        {
+          "nome": "Maykon",
+          "setores": "Cozinha, Estoque, Atendimento",
+          "id": "c15c"
+        },
+        {
+          "nome": "Walleska",
+          "setores": "Cozinha",
+          "id": "c15c"
         }
       ]
     }
