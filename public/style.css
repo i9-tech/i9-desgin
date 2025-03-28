@@ -114,8 +114,301 @@ body {
         width: 100vw;
         justify-content: center;
         align-items: center;
-        background-color: lightblue;
+        background-color: lightblue;  
+        overflow-x: auto;     
     }
+
+    /* Tipo um container pra eu deixar mais alinhadinhos */
+    .grupo3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0px;
+        gap: 10px;
+    }
+    
+    /* Modais */
+    .modais{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .modalComBotoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 645px;
+        height: 243px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #F7F7F7;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+
+    .modaisText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .modaisText h1{
+        color: #0E2361;
+        font-weight: 600;
+        font-size: 32px;
+        margin-bottom: 10px; 
+    }
+
+    .modaisText p{
+        font-size: 20px;
+        color: #000;
+        line-height: 1.5;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .buttons button {
+        margin-top: 20px;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: normal;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .btn-cancelar {
+        background-color: #0F14B8;
+        color: white;
+        width: 174px;
+        height: 41px;
+        border: none;
+    }
+    
+    .btn-cancelar:hover {
+        background-color: #0E2361;
+    }
+    
+    .btn-confirmar {
+        border-color: #0E2361;
+        color: #040B28;
+        width: 174px;
+        height: 41px;
+        text-align: center;
+    }
+    
+    .btn-confirmar:hover {
+        background-color: #0F14B8;
+        color: #FAFAFA;
+    }
+
+    .modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 630px;
+        height: 202px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #F7F7F7;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+
+    .modalText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* card pedido */
+    .pedidos {
+        background: #F4F4F4;
+        width: 461px;
+        height: 572px;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .pedidoInfo {
+
+        padding: 2px 20px 20px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+    .pedidoInfo h3 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .pedidoInfo p {
+        margin: 0;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.579);
+        
+    }
+    
+    .btn-info {
+        background: #0F14B8;
+        color: #F4F4F4;
+        border: none;
+        width: 45px;
+        height: 45px;
+        font-weight: bold;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .btn-info:hover {
+        background-color: #0E2361;
+    }
+    
+    .pedidoItens {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    .line{
+        border-top: 1px solid #ddd;
+    }
+    
+    .item {
+        margin-top: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 26px;
+        height: 71px;
+    }
+    
+    .item img {
+        width: 96px;
+        height: 69px;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    
+    .itemInfo {
+        flex-grow: 1;
+        margin-left: 10px;
+    }
+    
+    .itemInfo h4 {
+        margin: 0;
+        font-size: 20px;
+        font-weight:normal;
+        color: #04041f;
+    }
+    
+    .itemInfo p {
+        margin: 2px 0;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.500);
+    }
+
+    .itemInfo span {
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .itemInfo .observacao {
+        font-size: 16px;
+        color: red;
+    }
+    
+    .itemInfo .observacao span {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .btn-check {
+        color: white;
+        border: 1px solid #0F14B8;
+        width: 55px;
+        height: 58px;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn-check:hover {
+        background-color: #0F14B8;
+    }
+
+    .pedidoFinal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 19px;
+        padding: 0px 16px;
+    }
+    
+    .itensQtd {
+        font-size: 16px;
+        color: red;
+    }
+    
+    .btn-completo {
+        color: #0F14B8;
+        width: 144px;
+        height: 55px;
+        border: 1px solid #0F14B8;
+        gap: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+    .btn-completo:hover {
+        background-color: #0F14B8;
+        color: #F4F4F4;
+    }
+
+    .pedidosResumo {
+        background: #F4F4F4;
+        width: 461px;
+        height: 329px;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .pedidoCliente {
+        border-bottom: 1px solid #ddd;
+        padding: 0px 5px;
+    }
+    
+    .pedidoCliente p {
+        display: flex;
+        justify-content: space-between;
+        margin: 19px;
+        font-size: 20px;
+    }
+    
     
     .secao4 {
         display: flex;
