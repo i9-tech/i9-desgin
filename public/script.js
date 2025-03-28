@@ -73,37 +73,46 @@ function construirTabela(dadosProdutos) {
     // console.log(cabecalhoTabela);
     tabelaItens.appendChild(cabecalhoTabela);
     
-    inserirDados(dadosProdutos, tabelaItens);
+    buscarDados(dadosProdutos, tabelaItens);
 
 }
 
-function inserirDados(dadosProdutos, tabelaItens) {
+function buscarDados(dadosProdutos, tabelaItens) {
 
     dadosProdutos.forEach(produto => {
         const linhaItem = document.createElement("tr");
         linhaItem.classList.add("lista-item");
-        // console.log(produto)
         const dados = Object.values(produto)
-        dados.forEach((valor, chave) => {
-            // console.log(valor, chave);
-            const infoItem = document.createElement("td");
-            infoItem.classList.add("item");
-            if(chave == 9) {
-                const botaoEditar = document.createElement("button");
-                const botaoDeletar = document.createElement("button");
-                botaoEditar.classList.add("item");
-                botaoDeletar.classList.add("item");
-                botaoEditar.innerText = '✏️';
-                botaoDeletar.innerText = '🗑️';
-                infoItem.appendChild(botaoEditar);
-                infoItem.appendChild(botaoDeletar);
-            } else {
-                infoItem.innerText = valor;      
-            }
-            linhaItem.appendChild(infoItem);  
-        })
-        tabelaItens.appendChild(linhaItem);
-        // console.log(tabelaItens)
+        inserirDados(dados, linhaItem, tabelaItens)
     })
 
+}
+
+function inserirDados(dados, linhaItem, tabelaItens) {
+
+  dados.forEach((valor, chave) => {
+    const infoItem = document.createElement("td");
+    infoItem.classList.add("item");
+    if(chave == 9) {
+        const botaoEditar = document.createElement("button");
+        const botaoDeletar = document.createElement("button");
+        botaoEditar.classList.add("item");
+        botaoDeletar.classList.add("item");
+        botaoEditar.innerText = '✏️';
+        botaoDeletar.innerText = '🗑️';
+        infoItem.appendChild(botaoEditar);
+        infoItem.appendChild(botaoDeletar);
+    } else if (chave == 1) {
+      infoItem.classList.add('imagem')
+      const imagemProduto = document.createElement("img");
+      imagemProduto.src = valor;
+      infoItem.appendChild(imagemProduto);
+    } else if (chave == 4 || chave == 5) {
+      infoItem.innerText = "R$ " + valor
+    } else {
+        infoItem.innerText = valor;      
+    }
+    linhaItem.appendChild(infoItem);  
+})
+tabelaItens.appendChild(linhaItem);
 }
