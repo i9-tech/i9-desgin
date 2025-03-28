@@ -38,12 +38,6 @@ botoes.forEach(({ btn, secao, nome }) => {
 
 /* SEÇÃO 4 - LISTAS */
 /* SCRIPT PARA LISTA DE ITENS ESTOQUE */
-const tdItens = document.querySelectorAll(".item");
-
-tdItens.forEach((item) => {
-  item.title = item.innerText;
-});
-
 const secaoTabela = document.querySelector(".secao4");
 const tabelaItens = document.createElement("table");
 secaoTabela.appendChild(tabelaItens);
@@ -102,6 +96,7 @@ function inserirDados(dados, linhaItem, tabelaItens) {
     const infoItem = document.createElement("td");
     const spanItem = document.createElement("span");
     infoItem.classList.add("item");
+    spanItem.classList.add("item-span");
     if(chave == 9) {
         const botaoEditar = document.createElement("button");
         const botaoDeletar = document.createElement("button");
@@ -125,8 +120,17 @@ function inserirDados(dados, linhaItem, tabelaItens) {
     }
     linhaItem.appendChild(infoItem);
 })
-console.log(linhaItem)
+// console.log(linhaItem)
 tabelaItens.appendChild(linhaItem);
+tituloItens();
+}
+
+function tituloItens() {
+
+  const tdItens = document.querySelectorAll(".item-span");
+  tdItens.forEach((item) => {
+    item.title = item.innerText;
+  });
 }
 
 // FUNCIONARIOS

@@ -1,64 +1,120 @@
 {
-    "Produto": [
-        {
-          "codigo": "0122351",
-          "imagem": "https://www.clubeextra.com.br/img/uploads/1/219/528219.jpg",
-          "nome": "Arroz Velho",
-          "validade": "22/32/23",
-          "compra": 15,
-          "venda": 25,
-          "estoque": 7,
-          "descricao": "produto produto asdojasdiuajsdiaujsdiuasjdiuasdjasiudas",
-          "dtRegistro": "04/03/2025",          
-          "id": "1"
-        },
-        {
-          "codigo": "03944755",
-          "imagem": "",
-          "nome": "Batata",
-          "validade": "07/06/25",
-          "compra": 2.5,
-          "venda": 5.5,
-          "estoque": 12,
-          "descricao": "",
-          "dtRegistro": "04/03/2025",
-          "id": "2"
-        },
-        {
-          "codigo": "13123",
-          "imagem": "",
-          "nome": "Feijao",
-          "validade": "1",
-          "compra": 1,
-          "venda": 1,
-          "estoque": 1,
-          "descricao": "",
-          "dtRegistro": "05/03/2025",
-          "id": "db06"
-        },
-        {
-          "codigo": "12344",
-          "imagem": "",
-          "nome": "1",
-          "validade": "1",
-          "compra": 1,
-          "venda": 1,
-          "estoque": 1,
-          "descricao": "produto",
-          "dtRegistro": "05/03/2025",
-          "id": "c14c"
-        }
-      ],
-      "Funcionario": [
-        {
-          "nome": "Maykon",
-          "setores": "Cozinha, Estoque, Atendimento",
-          "id": "c15c"
-        },
-        {
-          "nome": "Walleska",
-          "setores": "Cozinha",
-          "id": "c15c"
-        }
-      ]
+  "Produto": [
+    {
+      "codigo": "0122351",
+      "imagem": "https://www.clubeextra.com.br/img/uploads/1/219/528219.jpg",
+      "nome": "Arroz Velho",
+      "validade": "22/12/2025",
+      "compra": 15.0,
+      "venda": 25.0,
+      "estoque": 7,
+      "descricao": "Arroz de ótima qualidade, ideal para todas as refeições.",
+      "dtRegistro": "04/03/2025",
+      "id": "1"
+    },
+    {
+      "codigo": "03944755",
+      "imagem": "",
+      "nome": "Batata",
+      "validade": "07/06/2025",
+      "compra": 2.5,
+      "venda": 5.5,
+      "estoque": 12,
+      "descricao": "Batatas frescas selecionadas, ideais para frituras e purês.",
+      "dtRegistro": "04/03/2025",
+      "id": "2"
+    },
+    {
+      "codigo": "13123",
+      "imagem": "",
+      "nome": "Feijão",
+      "validade": "15/08/2025",
+      "compra": 4.0,
+      "venda": 7.5,
+      "estoque": 20,
+      "descricao": "Feijão preto selecionado, rico em nutrientes.",
+      "dtRegistro": "05/03/2025",
+      "id": "3"
+    },
+    {
+      "codigo": "12344",
+      "imagem": "",
+      "nome": "Açúcar Refinado",
+      "validade": "10/10/2025",
+      "compra": 3.0,
+      "venda": 6.0,
+      "estoque": 15,
+      "descricao": "Açúcar refinado de alta pureza, ideal para doces e café.",
+      "dtRegistro": "05/03/2025",
+      "id": "4"
+    },
+    {
+      "codigo": "98765",
+      "imagem": "",
+      "nome": "Leite Integral",
+      "validade": "12/11/2025",
+      "compra": 4.5,
+      "venda": 7.0,
+      "estoque": 30,
+      "descricao": "Leite integral pasteurizado, fonte de cálcio.",
+      "dtRegistro": "06/03/2025",
+      "id": "5"
+    },
+    {
+      "codigo": "87654",
+      "imagem": "",
+      "nome": "Óleo de Soja",
+      "validade": "20/09/2025",
+      "compra": 6.0,
+      "venda": 10.0,
+      "estoque": 25,
+      "descricao": "Óleo de soja refinado, ideal para cozinhar.",
+      "dtRegistro": "06/03/2025",
+      "id": "6"
+    },
+    {
+      "codigo": "76543",
+      "imagem": "",
+      "nome": "Café Tradicional",
+      "validade": "15/12/2025",
+      "compra": 8.0,
+      "venda": 14.0,
+      "estoque": 18,
+      "descricao": "Café torrado e moído, sabor encorpado.",
+      "dtRegistro": "07/03/2025",
+      "id": "7"
     }
+  ],
+  "Funcionario": [
+    {
+      "nome": "Maykon",
+      "setores": ["Cozinha", "Estoque", "Atendimento"],
+      "id": "f01"
+    },
+    {
+      "nome": "Walleska",
+      "setores": ["Cozinha"],
+      "id": "f02"
+    },
+    {
+      "nome": "Carlos",
+      "setores": ["Atendimento"],
+      "id": "f03"
+    },
+    {
+      "nome": "Fernanda",
+      "setores": ["Estoque", "Financeiro"],
+      "id": "f04"
+    },
+    {
+      "nome": "Roberto",
+      "setores": ["Cozinha", "Atendimento"],
+      "id": "f05"
+    },
+    {
+      "nome": "Juliana",
+      "setores": ["RH", "Financeiro"],
+      "id": "f06"
+    }
+  ]
+}
