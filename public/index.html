@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Componentes de Design</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <main class="container">
         <button id="header">
@@ -34,7 +36,74 @@
             <div>SEÇÃO HOVERS</div>
         </section>
         <section class="secao2 secao">
-            <div>SEÇÃO BOTÕES</div>
+            <div class="botao-entrar">
+                <button class="button-entrar">Entrar > </button>
+            </div>
+
+            <div class="botao-confirmar-pedido">
+                <div class="info-pedido">
+                    <span id="qtd-itens">0 itens</span>
+                    <span id="valor-total">R$00,00</span>
+                </div>
+                <button class="button-confirmar">
+                    Confirmar
+                </button>
+            </div>
+
+            <div class="botao-pedido">
+                <button class="botao-generico-atendente">
+                    Confirmar Pedido
+                </button>
+                <button class="botao-generico-atendente">
+                    Adicionar Observação
+                </button>
+                <button class="botao-generico-atendente">
+                    Fechar
+                </button>
+            </div>
+
+            <div class="button-checkbox-completo">
+                <input type="checkbox" id="checkbox-pedido-completo">
+                <label for="checkbox-pedido-completo" class="checkbox-cozinha-label">
+                    <img src="../assets/check.svg" alt="Ícone Completo">
+                    COMPLETO
+                </label>
+
+                <input type="checkbox" id="checkbox-item-pedido">
+                <label for="checkbox-item-pedido" class="checkbox-cozinha-label">
+                    <img src="../assets/check.svg" alt="Ícone Completo">
+                </label>
+            </div>
+
+            <div class="button-carrossel">
+                <button class="botao-carrossel">
+                    <img src="../assets/seta-esquerda.svg" alt="Seta para esquerda">
+                </button>
+
+
+                <button class="botao-carrossel">
+                    <img src="../assets/seta-direita.svg" alt="Seta para direita">
+                </button>
+
+            </div>
+
+            <nav class="navbar" id="navbar">
+                <div class="user">
+                    <i><img src="../assets/user-icone-branco.svg" alt="Icone de Usuário"></i>
+                    <span>Patricia</span>
+                </div>
+                <ul>
+                    <li><i> <img src="../assets/dashboard-icone-colorido-escuro.svg"> </i> <span>Dashboard</span></li>
+                    <li><i> <img src="../assets/atendimento-icone-colorido-escuro.svg"> </i> <span> Atendimento </span></li>
+                    <li><i> <img src="../assets/cozinha-icone-colorido-escuro.svg"> </i> <span>Cozinha</span></li>
+                    <li><i><img src="../assets/estoque-icone-colorido-escuro.svg"> </i> <span>Estoque</span></li>
+                    <li><i> <img src="../assets/equipe-icone-colorido-escuro.svg"> </i> <span>Equipe</span></li>
+                    <li><i> <img src="../assets/sair-icone-colorido-escuro.svg"> </i> <span>Sair</span></li>
+                </ul>
+            </nav >
+
+
+
         </section>
         <section class="secao3 secao">
             <div>SEÇÃO MODAIS/CARDS</div>
@@ -49,4 +118,8 @@
 
 </body>
 <script src="./script.js"></script>
+<script>
+
+</script>
+
 </html>

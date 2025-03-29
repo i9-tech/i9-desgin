@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --texto-preto: #040B28;
-  --hovers: #0E2361;
-  --destaque: #0F14B8;
-  --background: #FAFAFA;
-  --background-white: #FBFEFF;
+    --texto-preto: #040B28;
+    --hovers: #0E2361;
+    --destaque: #0F14B8;
+    --background: #FAFAFA;
+    --background-white: #FBFEFF;
+    --cor-secundaria: #83A1FF;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  accent-color: var(--destaque);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    accent-color: var(--destaque);
 }
 
 body {
-  display: flex;
-  background-color: var(--background);
-  min-height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
+    display: flex;
+    background-color: var(--background);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -98,7 +99,7 @@ body {
         align-items: center;
         background-color: lightpink;
     }
-    
+
     .secao2 {
         display: flex;
         height: 100%;
@@ -106,8 +107,225 @@ body {
         justify-content: center;
         align-items: center;
         background-color: lightgreen;
+
+        .botao-entrar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-entrar {
+            background-color: var(--destaque);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .button-entrar:hover {
+            background-color: var(--hovers);
+        }
+
+        @media (max-width: 600px) {
+            .button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+        .botao-confirmar-pedido {
+            background-color: var(--cor-secundaria);
+            padding: 12px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 280px;
+            font-weight: 500;
+
+            .info-pedido {
+                color: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+
+                #qtd-itens {
+                    opacity: 65%;
+                }
+            }
+
+            .button-confirmar {
+                background-color: #FFFFFF;
+                border: none;
+                color: var(--cor-secundaria);
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: 600;
+            }
+
+            .button-confirmar:hover {
+                color: var(--destaque);
+            }
+        }
+
+        .botao-confirmar-pedido:hover {
+            background-color: var(--destaque);
+        }
+
+        .botao-generico-atendente {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--background);
+            background-color: var(--cor-secundaria);
+        }
+
+        .botao-generico-atendente:hover {
+            background-color: var(--destaque);
+        }
+
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkbox-cozinha-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            gap: 8px;
+            border: 1px solid var(--destaque);
+            border-radius: 8px;
+            background-color: white;
+            color: var(--destaque);
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        input[type="checkbox"]:checked+.checkbox-cozinha-label {
+            background-color: var(--destaque);
+            color: white;
+
+        }
+
+        input[type="checkbox"]:checked+.checkbox-cozinha-label img {
+            content: url("../assets/check-branco.svg");
+        }
+
+
+        .botao-carrossel {
+            padding: 20px 20px;
+            border: none;
+            border-radius: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 500;
+            color: white;
+            background-color: var(--destaque);
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-bottom: -4px
+            }
+        }
+
+        .botao-carrossel:hover {
+            background-color: var(--hovers);
+        }
+
+        .navbar {
+            width: 3rem;
+            height: 100vh;
+            background: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 400;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: width 0.3s ease;
+            overflow: hidden;
+            box-shadow: 5px 0px 15px rgba(7, 6, 6, 0.2);
+
+            img {
+                width: 30px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+                    text-align: left;
+                    white-space: nowrap;
+                    padding: 5px;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                li:hover {
+                    font-weight: 500;
+                    background-color: #0000001f;
+                    border-radius: 5px;
+                    filter: brightness(0) saturate(100%) invert(39%) sepia(90%) saturate(500%) hue-rotate(190deg);
+                }
+            }
+        }
+
+        .navbar:hover {
+            width: 12rem;
+
+            ul li span{
+                display: inline;
+
+            }
+        }
+
+        .user {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 8px;
+            background-color: var(--destaque);
+            color: white;
+            display: flex;
+            align-items: center;
+
+            i img {
+                width: 35px !important;
+                margin-right: 10px;
+            }
+        }
+
+        .clicked {
+            border-radius: 5px;
+            background-color: #0000001f;
+            filter: brightness(0) saturate(100%) invert(39%) sepia(90%) saturate(500%) hue-rotate(190deg);
+        }
     }
-    
+
+
     .secao3 {
         display: flex;
         height: 100%;
@@ -116,7 +334,7 @@ body {
         align-items: center;
         background-color: lightblue;
     }
-    
+
     .secao4 {
         display: flex;
         height: 100%;
@@ -125,7 +343,7 @@ body {
         align-items: center;
         background-color: lightcoral;
     }
-    
+
     .secao5 {
         display: flex;
         height: 100%;
