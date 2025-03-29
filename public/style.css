@@ -21,7 +21,8 @@ body {
   background-color: var(--background);
   min-height: 100vh;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .container {
@@ -122,12 +123,10 @@ body {
     .grupo3{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         align-content: center;
-        padding: 0px;
-        gap: 10px;
+        gap: 50px;
     }
     
     /* Modais */
@@ -138,6 +137,7 @@ body {
         justify-content: center;
         align-items: center;
         align-content: center;
+        margin-left: 1150px;
         padding: 0px;
         gap: 10px;
     }
@@ -345,7 +345,7 @@ body {
     }
 
     .btn-check {
-        color: white;
+        color: #FBFEFF;
         border: 1px solid #0F14B8;
         width: 55px;
         height: 58px;
@@ -407,6 +407,129 @@ body {
         justify-content: space-between;
         margin: 19px;
         font-size: 20px;
+    }
+
+    /* Cards sobre a nossa empresa */
+    .cardSobreNos {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 593px;
+        row-gap: 32px;
+        height: 500px;
+        background: linear-gradient(180deg, #FBFEFF 0%, #BCC9F1 100%);
+        box-shadow: -10px 0px 23.36px rgba(0, 0, 0, 0.25), 23.3596px -11.68px 23.3596px rgba(0, 0, 0, 0.25);
+        border-radius: 28.0316px;
+        padding: 32px;
+        text-align: center;
+        
+    }
+
+    .iconSobreNos {
+        width: 122px;
+        height: 122px;
+        background-color: #0E2361;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px;
+    }
+
+    .iconSobreNos img {
+        width: 80px;
+        height: 81px;
+    }
+
+    .cardSobreNos h3 {
+        color: #0F14B8;
+        font-size: 22px;
+        letter-spacing: 0.2px;
+        line-height: 28px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .cardSobreNos p {
+        font-weight: 500;
+        color: #040B28;
+        font-size: 22px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+
+    /* Cards sobre as funcionalidades do nosso sistema */
+    .cardFuncionalidades{
+        margin-right: 50px;
+        width: 541px;
+    }
+
+    .barraSelecao {
+        background: #BCC9F1;
+        width: 541px;
+        height: 41px;
+        padding: 0 10px;
+        border-radius: 8px;
+        gap: 210px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 176px;
+    }
+
+    .setaSelecao{
+        cursor: pointer;
+        color: #3E43C6;
+        margin-top: 10px;
+    }
+    
+    .menuFuncionalidades {
+        background: transparent;
+        border: none;
+        font-size: 22px;
+        letter-spacing: 0.2px;
+        font-weight: bold;
+        color: #3E43C6;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .menuFuncionalidades option {
+        background: #BCC9F1;
+        color: #040B28;
+        font-size: 22px;
+    }
+
+    .infoFuncionalidades {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardFuncionalidade {
+        background: #0F14B8;
+        color: #FBFEFF;
+        padding: 32px 10px;
+        border-radius: 8px;
+        width: 541px;
+        height: 236px;
+        text-align: center;
+    }
+    
+    .cardFuncionalidade h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .cardFuncionalidade p {
+        font-size: 22px;
+        margin-top: 32px;
     }
     
     
