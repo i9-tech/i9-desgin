@@ -7,10 +7,8 @@
     --background: #FAFAFA;
     --background-white: #FBFEFF;
 
-    /* Var CSS DO HOVER - VOU AJUSTAR AINDA */
-    --card-branco: #FFFFFF;
     --azul-escuro: #000DDB;
-    --azul-claro: #A5b4fC;
+    --azul-claro: #A5B4fC;
 
     --botao-fundo: #BCC9F1;
     --botao-fundo-clicado: #83A1FF;
@@ -54,7 +52,7 @@ body {
 
     #header:hover {
         cursor: pointer;
-        background-color: #0e2361aa;
+        background-color: #0E2361AA;
     }
 
     .cabecalho {
@@ -64,7 +62,7 @@ body {
         flex-direction: column;
         width: 100vw;
         align-items: center;
-        background-color: #bcc9f16a;
+        background-color: #BCC9F16A;
 
         .titulo {
             font-weight: normal;
@@ -89,7 +87,7 @@ body {
             .botoes {
                 button {
                     background-color: #83A1FF;
-                    color: #fff;
+                    color: #FFF;
                     padding: 6px;
                     border: none;
                     border-radius: 1rem;
@@ -129,7 +127,7 @@ body {
                 left: 0;
                 width: 16vw;
                 height: 30vh;
-                background-color: #000ddb;
+                background-color: #000DDB;
                 opacity: 0;
                 transition: opacity 1 ease;
                 border-radius: 20px;
@@ -138,7 +136,6 @@ body {
             &:hover .overlay {
                 opacity: 1;
             }
-
         }
 
         .btns {
@@ -164,17 +161,16 @@ body {
 
                 &:hover {
                     background-color: var(--botao-fundo-clicado);
-                    color: var(--card-branco);
+                    color: var(--background-white);
                 }
             }
         }
 
 
-
         .produto {
             display: flex;
             align-items: center;
-            background-color: var(--card-branco);
+            background-color: var(--background-white);
             padding: 1rem;
             width: 28vw;
             height: 16vh;
@@ -186,7 +182,7 @@ body {
                 flex-direction: column;
                 display: flex;
                 width: 18vw;
-                
+
                 h2 {
                     margin: 0;
                 }
@@ -204,14 +200,14 @@ body {
                     p {
                         margin: 0;
                         width: 1.5rem;
-                        color: #db0000;
+                        color: #DB0000;
                     }
                 }
             }
 
             &:hover {
                 background-color: var(--azul-escuro);
-                color: var(--card-branco);
+                color: var(--background-white);
             }
 
             img {
@@ -224,7 +220,7 @@ body {
                 top: 0px;
                 right: 0px;
                 background-color: var(--azul-escuro);
-                color: var(--card-branco);
+                color: var(--background-white);
                 border: none;
                 border-radius: 0rem 1rem;
                 width: 32px;
@@ -239,10 +235,7 @@ body {
                     color: var(--azul-escuro);
                 }
             }
-
-
         }
-
 
 
         .categoria {
@@ -269,13 +262,9 @@ body {
                 background-color: var(--azul-escuro);
                 color: var(--card-branco);
             }
-
         }
-
-
-
-
     }
+
 
     .secao2 {
         display: flex;
@@ -312,7 +301,4 @@ body {
         align-items: center;
         background-color: lightslategray;
     }
-
-
-
 }
