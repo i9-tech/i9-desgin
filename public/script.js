@@ -35,4 +35,13 @@ botoes.forEach(({ btn, secao, nome }) => {
             scnAtual.innerHTML = `Categoria selecionada: <b style='color: red'>${nome}</b>`
         }
     });
+    
+});
+
+const itensMenu = document.querySelectorAll('.navbar ul li');
+    itensMenu.forEach(item => {
+        item.addEventListener('click', () => {
+            itensMenu.forEach(i => i.classList.remove('clicked'));
+            item.classList.add('clicked');
+        });
 });
